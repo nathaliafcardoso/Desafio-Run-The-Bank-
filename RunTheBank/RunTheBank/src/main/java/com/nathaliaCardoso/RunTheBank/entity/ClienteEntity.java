@@ -20,5 +20,5 @@ public class ClienteEntity {
     private String endereco;
     private String email;
     private String senha;
-//    private List<Contas> contas;
+//    private List<ContaEntity> contas;
 }
