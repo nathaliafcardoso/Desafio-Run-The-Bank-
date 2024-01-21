@@ -1,4 +1,4 @@
-package com.nathaliaCardoso.RunTheBank.respository;
+package com.nathaliaCardoso.RunTheBank.repository;
 
 import com.nathaliaCardoso.RunTheBank.entity.ContaEntity;
 import org.springframework.data.jpa.repository.JpaRepository;

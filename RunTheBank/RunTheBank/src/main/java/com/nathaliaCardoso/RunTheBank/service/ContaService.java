@@ -1,13 +1,12 @@
 package com.nathaliaCardoso.RunTheBank.service;
 
 import com.nathaliaCardoso.RunTheBank.entity.ContaEntity;
-import com.nathaliaCardoso.RunTheBank.respository.ContaRepository;
+import com.nathaliaCardoso.RunTheBank.repository.ContaRepository;
 import lombok.SneakyThrows;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
-import java.util.Optional;
 
 @Service
 public class ContaService {
@@ -21,8 +20,8 @@ public class ContaService {
         return account;
     }
 
-    public Optional<ContaEntity> findById(Long id){
-        return contaRepository.findById(id);
+    public ContaEntity findById(Long id){
+        return contaRepository.findById(id).orElse(new ContaEntity());
     }
 
 //

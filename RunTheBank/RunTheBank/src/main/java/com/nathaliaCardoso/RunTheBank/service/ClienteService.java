@@ -1,12 +1,11 @@
 package com.nathaliaCardoso.RunTheBank.service;
 
 import com.nathaliaCardoso.RunTheBank.entity.ClienteEntity;
-import com.nathaliaCardoso.RunTheBank.respository.ClienteRepository;
+import com.nathaliaCardoso.RunTheBank.repository.ClienteRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
-import java.util.Optional;
 
 @Service
 public class ClienteService {
