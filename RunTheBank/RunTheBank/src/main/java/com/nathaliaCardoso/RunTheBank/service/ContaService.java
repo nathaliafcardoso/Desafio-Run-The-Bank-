@@ -24,11 +24,6 @@ public class ContaService {
         return contaRepository.findById(id).orElse(new ContaEntity());
     }
 
-//
-//    public ContaEntity findByAccountAndAgencyNumber(Integer agency, Long account) {
-//        return contaRepository.findByAccountAndAgencyNumber(agency, account);
-//    }
-
 
     public List<ContaEntity> listAllAccount() {
         return contaRepository.findAll();

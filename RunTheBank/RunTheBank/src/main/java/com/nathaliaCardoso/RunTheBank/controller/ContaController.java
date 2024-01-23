@@ -28,11 +28,6 @@ public class ContaController {
         return ResponseEntity.ok(contaService.findById(id));
     }
 
-//    @GetMapping("/agencia")
-//    public ResponseEntity getAccount(@RequestParam String account, @RequestParam Integer agency){
-////        return ResponseEntity.ok(contaService.findByAccountAndAgencyNumber(account,agency));
-//    }
-
     @GetMapping
     public ResponseEntity getAllAccount() {
         return ResponseEntity.ok(contaService.listAllAccount());

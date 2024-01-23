@@ -1,40 +1,50 @@
 package com.nathaliaCardoso.RunTheBank.entity;
 
-import jakarta.persistence.*;
+
+import jakarta.persistence.Column;
+import jakarta.persistence.Entity;
+import jakarta.persistence.GeneratedValue;
+import jakarta.persistence.Id;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
 import javax.validation.constraints.NotNull;
-import java.util.List;
-
 
 @Data
 @Entity
 @AllArgsConstructor
 @NoArgsConstructor
-public class ClienteEntity {
+public class Endereco {
 
     @Id
-    @NotNull(message = "Campo Obrigatorio!")
-    @Column(nullable = false)
-    private String documento;
+    @GeneratedValue
+    private Long id;
 
     @NotNull(message = "Campo Obrigatorio!")
     @Column(nullable = false)
-    private String nome;
-
-    @ManyToOne
-    private Endereco endereco;
+    private String cep;
 
     @NotNull(message = "Campo Obrigatorio!")
     @Column(nullable = false)
-    private String email;
+    private String rua;
 
     @NotNull(message = "Campo Obrigatorio!")
     @Column(nullable = false)
-    private String senha;
+    private String numero;
 
-    @OneToMany
-    private List<ContaEntity> contas;
+    @NotNull(message = "Campo Obrigatorio!")
+    @Column(nullable = false)
+    private String bairro;
+
+    @Column(nullable = true)
+    private String complemento;
+
+    @NotNull(message = "Campo Obrigatorio!")
+    @Column(nullable = false)
+    private String cidade;
+
+    @NotNull
+    @Column(nullable = false)
+    private String estado;
 }

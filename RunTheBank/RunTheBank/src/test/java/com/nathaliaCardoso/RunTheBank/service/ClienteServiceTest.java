@@ -26,7 +26,6 @@ class ClienteServiceTest {
         p1.setDocumento("400.000.000-00");
         p1.setNome("Maria");
         p1.setSenha("123L@");
-        p1.setEndereco("teste");
         p1.setEmail("teste@teste");
         assertNotNull(p1);
         service.save(p1);
@@ -41,7 +40,6 @@ class ClienteServiceTest {
         p1.setDocumento("400.000.000-00");
         p1.setNome("Maria");
         p1.setSenha("123L@");
-        p1.setEndereco("teste");
         p1.setEmail("teste@teste");
         service.findById(p1.getDocumento());
 
@@ -55,7 +53,6 @@ class ClienteServiceTest {
         p1.setDocumento("400.000.000-00");
         p1.setNome("Maria");
         p1.setSenha("123L@");
-        p1.setEndereco("teste");
         p1.setEmail("teste@teste");
         service.listAll();
 
@@ -69,7 +66,6 @@ class ClienteServiceTest {
         p1.setDocumento("400.000.000-00");
         p1.setNome("Maria");
         p1.setSenha("123L@");
-        p1.setEndereco("teste");
         p1.setEmail("teste@teste");
         service.delete(p1.getDocumento());
 

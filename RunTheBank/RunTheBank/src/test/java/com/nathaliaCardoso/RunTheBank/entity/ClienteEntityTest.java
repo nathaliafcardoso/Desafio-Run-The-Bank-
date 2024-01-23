@@ -22,13 +22,6 @@ class ClienteEntityTest {
         assertEquals("Maria Silva", p1.getNome());
     }
 
-    @Test
-    void testSetEndereco() {
-
-        ClienteEntity p1 = new ClienteEntity();
-        p1.setEndereco("Rua 1");
-        assertEquals("Rua 1", p1.getEndereco());
-    }
 
     @Test
     void setEmail() {

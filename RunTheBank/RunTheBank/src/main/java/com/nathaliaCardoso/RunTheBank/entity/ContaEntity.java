@@ -18,12 +18,23 @@ public class ContaEntity {
     @Column(unique = true)
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
-    //    private ClienteEntity cliente;
+    @ManyToOne
+    private ClienteEntity cliente;
     @NotNull
     @Column(unique = true)
+    @NotNull(message = "Campo Obrigatorio!")
     private Integer agencia;
+
+    @NotNull(message = "Campo Obrigatorio!")
+    @Column(nullable = false)
     private Long conta;
+
+    @NotNull(message = "Campo Obrigatorio!")
+    @Column(nullable = false)
     private Status status;
+
+    @NotNull(message = "Campo Obrigatorio!")
+    @Column(nullable = false)
     private Double saldo;
 
 
